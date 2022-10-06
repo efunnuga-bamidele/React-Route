@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 
 //Pages component
 
@@ -14,9 +14,9 @@ function App() {
     <BrowserRouter>
       <nav>
         <h1>My Articles</h1>
-        <a href='/'>Home</a>
-        <a href='/about'>About</a>
-        <a href='/contact'>Contact</a>
+        <NavLink exact to='/' end>Home</NavLink>
+        <NavLink exact to='/about' end>About</NavLink>
+        <NavLink exact to='/contact' end>Contact</NavLink>
       </nav>
 
      <Routes>
